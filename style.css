@@ -1,0 +1,257 @@
+
+body {
+    margin: 0;
+    background-color: #e4f9f5;
+    font-family: 'Teko', sans-serif;
+}
+
+/* NAV */
+
+.logo {
+    color: #444;
+    font-family:'Hammersmith One', sans-serif;
+    margin-right: auto;
+}
+
+.nav-bars {
+    background-color: #f5f5f6;
+    box-shadow: 0px 0px 2px 0px #444;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    font-size: 1.5em;
+    margin: 0;
+}
+
+
+a {
+    text-decoration: none;
+    color: #444;
+}
+
+li {
+    padding: 20px;
+}
+
+/*  COVER  */
+
+span {
+    color: #ff7f50;
+}
+
+h1 {
+    font-size: 45px;
+}
+
+p {
+    font-size: 20px;
+}
+
+.cover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+.profile {
+    width: 30vw;
+}
+
+.in-fo {
+    width: 50vw;
+}
+
+.mountain {
+    width: 40vw;
+}
+
+@media only screen and (max-width: 768px){
+    .main-nav {
+        font-size: 1em;
+        padding: 0;
+    }
+
+    .cover {
+        height: 40vh;
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+    
+    p {
+        font-size: 15px;
+    }
+}
+
+hr{
+    border: dotted #444 6px;
+    border-bottom: none;
+    width: 4%;
+    margin: 100px auto;
+}
+
+/*  GRID  */
+
+.skill {
+    color: #66bfbf;
+    text-align: center;
+}
+
+.skills-grid {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    width: 100px;
+}
+
+.box {
+    padding: 50px;
+}
+
+.zone {
+    background-color: #f5f5f6;
+    text-align: center;
+    border-radius: 20px 45px 45px 45px;
+    padding: 50px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+/*  Progress Bar  */
+
+.grid2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+}
+
+.goal-logo {
+    width: 13vw;
+    margin-bottom: 30px;
+}
+
+.span {
+    color: black;
+}
+
+.skills-bar {
+    width: 60vw;
+    background: #fff;
+    border-radius: 10px;
+    padding: 25px 30px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.skills-bar .bars {
+    margin: 20px 0;
+}
+
+.skills-bar .bars:first-child {
+    margin-top: 0;
+}
+
+.skills-bar .bars .info {
+    margin-bottom: 5px;
+}
+
+.skills-bar .bars .info span {
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.skills-bar .bars .progress-line {
+    position: relative;
+    height: 10px;
+    width: 100%;
+    background: #f0f0f0;
+    box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.05),
+                      0px 1px rgba(255, 255, 255, 0.8);
+}
+
+.bars .progress-line span {
+    height: 100%;
+    width: 80%;
+    background: #ff7f50;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.progress-line.html span {
+    width: 85%;
+}
+
+.progress-line.css span {
+    width: 70%;
+}
+
+.progress-line.js span {
+    width: 60%;
+}
+
+.bars .progress-line span::before {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: -10px;
+    height: 0;
+    width: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: #000;
+}
+
+.bars .progress-line span::after {
+    position: absolute;
+    right: 0;
+    top: -33px;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    background: #000;
+    padding: 1px 8px;
+    border-radius: 3px;
+}
+
+.progress-line.html span::after {
+    content: "85%";
+}
+
+.progress-line.css span::after {
+    content: "70%";
+}
+
+.progress-line.js span::after {
+    content: "60%";
+}
+/*  Footer  */
+
+.bottom-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.social-logo {
+    width: 30px;
+    height: 30px;
+}
+
+.footer-link {
+    padding: 0px 15px 0px 5px;
+}
+
+.copyright {
+    text-align: center;
+}
+
